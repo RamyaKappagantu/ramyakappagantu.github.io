@@ -93,7 +93,7 @@
                 <p style="text-align: justify;" class="lead">
                     I am a Software Developer turned Data professional with over 3 years of experience in developing
                     scalable backend systems and data-centric features. After completing my postgraduate studies in 
-                    Artificial Intelligence, I transitioned into the data space, building ETL pipelines and ML models,
+                    Artificial Intelligence, I transitioned into the data space, building ETL pipelines, ML models,
                     and analyzing data for decision making. 
                     My skills span Python, SQL, AWS, PySpark, Time Series Forecasting, Statistical Analysis and Tableau. 
                     I enjoy solving problems and building practical solutions to data.
@@ -266,6 +266,79 @@
         </section>
 
         <hr class="m-0" />
+
+        <!-- Projects-->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-3">Fire Emergency Prediction Support Tool with the 911, City of Barrie</h3>
+                        <p style="text-align: justify;">
+                            This project predicts the type and severity of the fire emergency using CAD and RMS 
+                            historical fire emergencies data, weather and census data so that 911 can take 
+                            necessary action and manage their resources. Performed ETL on the data sources using SSIS.
+                            The data has been cleaned by handling missing and inconsistent values, removing columns 
+                            that are not relevant for further analysis. In addition, ArcGIS has been utilized
+                            to obtain dissemination areas of Barrie so that the fire emergencies are spotted according to the 
+                            dissemination area.
+                            3 different time-series forecasting models like LSTM (Long Short-Term Memory), 
+                            VAR (Vector Autoregressive) and Prophet has been implemented to predict the next fire emergency. A 
+                            web based dashboard has been built and deployed using Angular to visualize the fire emergency
+                            dissemination area, model metrics and the emergency severity(low, medium, high) using heatmaps. 
+                            Metrics like accuracy, rmse has been calculated to evaluate the model performance and 
+                            Hyperparameter tuning has been performed where model performance of LSTM has significantly
+                            improved by 6%. The conclusions drawn from this project helps the 911 to prioritize the emergencies, 
+                            reduce casualties and plan resources more effectively.
+
+                        </p>
+                        <p>Tech Stack: Python, SQL, SSIS, ETL, Time-Series Forecasting, Model Evaluation, Hyperparameter Tuning, Angular</p>
+                        <p>
+                            <a href="https://github.com/RamyaKappagantu/CoB_Fire_Emergency_Prediction/tree/main" target="_blank"
+                                class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </p>
+
+                        <div class="container">
+                            <div class="row">
+                                <img src="assets/projects/cob.jpg" class="img-fluid"
+                                    alt="cob-output">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-3">Analysis of Public Drinking Water Fountains in Ottawa</h3>
+                        <p style="text-align: justify;">
+                            This project involves collecting the data from Ottawa Open Datasets and performing data cleaning tasks
+                            like handling missing values, creating a new column to provide full address of the fountain, removing
+                            redundant columns (French translations), imputing values in CREATED_DATE column based on LAST_EDITED_DATE
+                            where a pattern of 2 to 3 secs difference has been noticed between the two columns. The Summary Statistics
+                            has been calculated using Sheets functions to understand typical values, outliers and quick insights.
+                            The data has been visualized in Tableau to answer key questions like "How many fountains are Open in Ottawa 
+                            based on the duration of season?","How many fountains are Open Year Round based on whether they are present 
+                            inside or outside the building?". All the insights are captured in a dashboard which also has filters so that 
+                            users can get the corresponding visualizations. The dashboard also has an option to download as a pdf file which
+                            can be utilized like a report for presentations.
+
+                        </p>
+                        <p>Tech Stack: Google Sheets, Tableau</p>
+                        <p>
+                            <a href="https://public.tableau.com/app/profile/ramya.kappagantu/viz/OttawaPublicFountainsAnalysis/OttawaPublicFountainsAnalysis" target="_blank"
+                                class="btn btn-secondary"><i class="fas fa-chart-area"></i> Tableau Dashboard</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+    </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
